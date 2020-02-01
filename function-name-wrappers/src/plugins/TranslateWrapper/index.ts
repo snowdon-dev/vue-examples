@@ -2,7 +2,7 @@ import VueI18n from "vue-i18n";
 import { VueConstructor } from "vue/types";
 
 const addFunctionToVueBase = (name: string, vueIn: VueConstructor) => {
-  vueIn.prototype[name] = function(...args: any[]) {
+  vueIn.prototype[name] = function(): VueI18n.TranslateResult {
     return this.$t.apply(this, arguments);
   };
 };

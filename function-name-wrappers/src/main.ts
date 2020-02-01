@@ -4,7 +4,7 @@ import App from "./App.vue";
 import {
   TranslateWrapper,
   installCustomNameViaPlugin
-} from "./plugins/VueI18nWrapper";
+} from "./plugins/TranslateWrapper";
 
 var messages = {
   en: {
